@@ -3,7 +3,3 @@
 
 # Mac .DS_Store Files
 *.DS_Store
-
-# Include Plugin files
-!GameData/RokanovRebalance/**
-**/*.DS_Store
