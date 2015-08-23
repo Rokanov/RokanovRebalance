@@ -1,0 +1,919 @@
+//------\\
+//---SETI-CommunityTechTree---\\
+//------\\
+//---Changes to the Community Tech Tree---\\
+//------\\
+
+@TechTree
+{
+	@RDNode:HAS[#id[*],~id[modularWings],~id[tacLifeSupport]]
+	{
+		@hideEmpty = False
+	}
+	
+	RDNode
+	{
+		id = orbitalStations
+		title = Orbital Stations
+		description = After the early stages of orbital stations, we are now able to build more complex orbital structures.
+		cost = 300
+		hideEmpty = False
+		nodeName = ct_orbitalStations
+		anyToUnlock = False
+		icon = RDicon_evaTech
+		pos = -1309, 320, -1
+		scale = 0.6
+		Parent
+		{
+			parentID = heatManagementSystems
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}	
+		Parent
+		{
+			parentID = hydroponics
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}	
+	}
+	
+	@RDNode:HAS[#id[start]]
+	{
+		@pos = -2568,1180,-1
+	}
+	
+	@RDNode:HAS[#id[basicRocketry]]
+	{
+		@cost = 4
+		@pos = -2385,1300,-1
+	}
+	
+	@RDNode:HAS[#id[engineering101]]
+	{
+		@cost = 4
+		@pos = -2385,1180,-1
+	}
+	
+	RDNode
+	{
+		id = earlyAviation
+		title = Early Aviation
+		description = When expensive Jets are not yet available for the space program.
+		cost = 4
+		hideEmpty = False
+		nodeName = ct_earlyAviation
+		anyToUnlock = False
+		icon = RDicon_stability
+		pos = -2385,1060,-1
+		scale = 0.6
+		
+		Parent
+		{
+			parentID = start
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	
+	RDNode
+	{
+		id = modularWings
+		title = Sounding Rockets
+		description = Take to the skies one tiny step at a time!
+		cost = 1
+		hideEmpty = True
+		nodeName = ct_modularWings
+		anyToUnlock = False
+		icon = RDicon_stability
+		pos = -2385,1120,-1
+		scale = 0.6
+		
+		Parent
+		{
+			parentID = start
+			lineFrom = TOP
+			lineTo = BOTTOM
+		}
+	}
+	
+	@RDNode:HAS[#id[generalRocketry]]
+	{
+		@cost = 16
+		@anyToUnlock = False
+		@pos = -2170,1470.2,-1
+		Parent
+		{
+			parentID = engineering101
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	
+	@RDNode:HAS[#id[propulsionSystems]]
+	{
+		@pos = -1723,1635,-1
+	}
+	
+	@RDNode:HAS[#id[precisionPropulsion]]
+	{
+		@pos = -1519,1635,-1
+	}
+	
+	RDNode
+	{
+		id = specializedPropulsion
+		title = Specialized Propulsion
+		description = Specialized Propulsion technologies.
+		cost = 550
+		hideEmpty = False
+		nodeName = ct_specializedPropulsion
+		anyToUnlock = False
+		icon = RDicon_propulsion-precision
+		pos = -1118,1635,-1
+		scale = 0.6
+		
+		Parent
+		{
+			parentID = precisionPropulsion
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = heavierRocketry
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	
+	@RDNode:HAS[#id[heavyRocketry]]
+	{
+		@pos = -1723,1551,-1
+		@anyToUnlock = False
+		Parent
+		{
+			parentID = basicFuelSystems
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	
+	RDNode
+	{
+		id = improvedRocketry
+		title = Improved Rocketry
+		description = Improved Rocketry technologies.
+		cost = 160
+		hideEmpty = False
+		nodeName = ct_improvedRocketry
+		anyToUnlock = False
+		icon = RDicon_rocketry-heavy
+		pos = -1519,1551,-1
+		scale = 0.6
+		
+		Parent
+		{
+			parentID = propulsionSystems
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = heavyRocketry
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = fuelSystems
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	
+	@RDNode:HAS[#id[heavierRocketry]]
+	{
+		@pos = -1309,1551,-1
+		@cost = 300
+		@anyToUnlock = False
+		@Parent:HAS[#parentID[heavyRocketry]]
+		{
+			@parentID = improvedRocketry
+		}
+		Parent
+		{
+			parentID = advFuelSystems
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	
+	@RDNode:HAS[#id[veryHeavyRocketry]]
+	{
+		@anyToUnlock = False
+		@pos = -1118,1551,-1
+	}
+	
+	@RDNode:HAS[#id[experimentalRocketry]]
+	{
+		@anyToUnlock = False
+		@pos = -927,1551,-1
+		Parent
+		{
+			parentID = highPerformanceFuelSystems
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	
+	@RDNode:HAS[#id[giganticRocketry]]
+	{		
+		@anyToUnlock = False
+		@pos = -736,1551,-1
+		Parent
+		{
+			parentID = specializedFuelStorage
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	
+	@RDNode:HAS[#id[colossalRocketry]]
+	{
+		@anyToUnlock = False
+		@pos = -545,1551,-1
+		Parent
+		{
+			parentID = exoticFuelStorage
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	
+	RDNode
+	{
+		id = basicFuelSystems
+		title = Basic Fuel Systems
+		description = Basic Fuel Systems provide a greater variety of tank shapes and sizes.
+		cost = 45
+		hideEmpty = False
+		nodeName = ct_basicFuelSystems
+		anyToUnlock = False
+		icon = RDicon_fuelSystems
+		pos = -1946,1470.2,-1
+		scale = 0.6
+		
+		Parent
+		{
+			parentID = generalRocketry
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	
+	@RDNode:HAS[#id[fuelSystems]]
+	{
+		@anyToUnlock = False
+		@Parent:HAS[#parentID[advRocketry]]
+		{
+			@parentID = basicFuelSystems
+		}
+	}
+	
+	@RDNode:HAS[#id[advFuelSystems]]
+	{
+		@anyToUnlock = False
+		@Parent:HAS[#parentID[propulsionSystems]]
+		{
+			@parentID = advConstruction
+		}
+	}
+	
+	@RDNode:HAS[#id[largeVolumeContainment]]
+	{
+		@anyToUnlock = False
+	}
+	
+	@RDNode:HAS[#id[highPerformanceFuelSystems]]
+	{
+		@anyToUnlock = False
+		Parent
+		{
+			parentID = advMetalworks
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	
+	@RDNode:HAS[#id[specializedFuelStorage]]
+	{
+		@anyToUnlock = False
+		Parent
+		{
+			parentID = nanolathing
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}	
+	
+	@RDNode:HAS[#id[actuators]]
+	{
+		@pos = -1519,1355,-1
+	}
+	
+	@RDNode:HAS[#id[advActuators]]
+	{
+		@pos = -1309,1355,-1
+	}
+	
+	@RDNode:HAS[#id[experimentalActuators]]
+	{
+		@pos = -1118,1355,-1
+	}
+	
+	@RDNode:HAS[#id[composites]]
+	{
+		@pos = -1309,1300,-1
+	}
+	
+	@RDNode:HAS[#id[metaMaterials]]
+	{
+		@pos = -1118,1300,-1
+	}
+	
+	@RDNode:HAS[#id[stability]]
+	{
+		@cost = 16
+		@anyToUnlock = False
+		@Parent:HAS[#parentID[basicRocketry]]
+		{
+			@parentID = earlyAviation
+		}
+	}
+	
+	@RDNode:HAS[#id[aerodynamicSystems]]
+	{
+		@anyToUnlock = False
+	}
+	
+	@RDNode:HAS[#id[supersonicFlight]]
+	{
+		@pos = -1519,1240,-1
+		@anyToUnlock = False
+		Parent
+		{
+			parentID = advConstruction
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	
+	@RDNode:HAS[#id[highAltitudeFlight]]
+	{
+		@pos = -1309,1240,-1
+		@anyToUnlock = False
+		Parent
+		{
+			parentID = specializedConstruction
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = advAerodynamics
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	
+	@RDNode:HAS[#id[hypersonicFlight]]
+	{
+		@pos = -1118,1240,-1
+		@anyToUnlock = False
+		Parent
+		{
+			parentID = composites
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	
+	@RDNode:HAS[#id[aerospaceTech]]
+	{
+		@pos = -927,1240,-1
+	}
+	
+	@RDNode:HAS[#id[expAircraftEngines]]
+	{
+		@pos = -736,1240, -1
+	}
+	
+	@RDNode:HAS[#id[subsonicFlight]]
+	{
+		@pos = -1521,1120,-1
+	}
+	
+	@RDNode:HAS[#id[specializedFlightSystems]]
+	{
+		@pos = -1310,1120,-1
+		@anyToUnlock = False
+		Parent
+		{
+			parentID = advLanding
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	
+	@RDNode:HAS[#id[advAerodynamics]]
+	{
+		@pos = -1519,1180,-1
+	}
+	
+	@RDNode:HAS[#id[heavyAerodynamics]]
+	{
+		@pos = -1310,1180,-1
+		@anyToUnlock = False
+		Parent
+		{
+			parentID = subsonicFlight
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	
+	@RDNode:HAS[#id[experimentalAerodynamics]]
+	{
+		@pos = -1120,1180,-1
+		@anyToUnlock = False
+		Parent
+		{
+			parentID = highAltitudeFlight
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	
+	RDNode
+	{
+		id = wideBodyAerodynamics
+		title = Wide-Body Aerodynamics
+		description = Wider aircraft bodies for larger payloads.
+		cost = 550
+		hideEmpty = False
+		nodeName = ct_wideBodyAerodynamics
+		anyToUnlock = False
+		icon = RDicon_aerodynamics-heavy
+		pos = -1120,1120,-1
+		scale = 0.6
+		Parent
+		{
+			parentID = highAltitudeFlight
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = heavyAerodynamics
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}	
+	}
+	
+	@RDNode:HAS[#id[aerospaceComposites]]
+	{
+		@anyToUnlock = False
+		Parent
+		{
+			parentID = wideBodyAerodynamics
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	
+	@RDNode:HAS[#id[landing]]
+	{
+		@anyToUnlock = False
+		@icon = RDicon_landing-advanced
+	}
+	
+	@RDNode:HAS[#id[advLanding]]
+	{
+		@icon = RDicon_landing
+	}
+	
+	@RDNode:HAS[#id[survivability]]
+	{
+		@cost = 16
+		@pos = -2170,930,-1
+		@Parent:HAS[#parentID[engineering101]]
+		{
+			@parentID = earlyAviation
+		}
+	}
+	
+	@RDNode:HAS[#id[enhancedSurvivability]]
+	{
+		@icon = RDicon_survivability
+		@pos = -1946, 810, -1
+	}
+	
+	RDNode
+	{
+		id = advSurvivability
+		title = Advanced Survivability
+		description = Advanced survivability e.g. for water landings.
+		cost = 90
+		hideEmpty = False
+		nodeName = ct_advSurvivability
+		anyToUnlock = False
+		icon = RDicon_survivability
+		pos = -1723, 810, -1
+		scale = 0.6
+		Parent
+		{
+			parentID = enhancedSurvivability
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	
+	RDNode
+	{
+		id = tacLifeSupport
+		title = Life Support Containers
+		description = If you use procedural parts for life support and do not want to clutter your VAB, just do not research this node!
+		cost = 1
+		hideEmpty = TRUE
+		nodeName = ct_tacLifeSupport
+		anyToUnlock = False
+		icon = RDicon_largeVolumeContainment
+		pos = -1946, 870, -1
+		scale = 0.6
+		Parent
+		{
+			parentID = enhancedSurvivability
+			lineFrom = TOP
+			lineTo = BOTTOM
+		}
+	}
+	
+	@RDNode:HAS[#id[flightControl]]
+	{
+		@anyToUnlock = False
+		@pos = -1946,990,-1
+	}
+	
+	@RDNode:HAS[#id[unmannedTech]]
+	{
+		@pos = -1309,990,-1
+		@Parent:HAS[#parentID[precisionEngineering]]
+		{
+			@parentID = specializedControl
+		}
+	}
+	
+	@RDNode:HAS[#id[advUnmanned]]
+	{
+		@pos = -1118,990,-1
+	}
+	
+	@RDNode:HAS[#id[largeUnmanned]]
+	{
+		@pos = -927,990,-1
+		!Parent:HAS[#parentID[automation]]
+		{}
+	}
+	
+	@RDNode:HAS[#id[artificialIntelligence]]
+	{
+		@icon = RDicon_robotics
+		@pos = -736,990,-1
+	}
+	
+	@RDNode:HAS[#id[basicScience]]
+	{
+		@pos = -1946,620,-1
+	}
+	
+	@RDNode:HAS[#id[miniaturization]]
+	{
+		@pos = -1723,620,-1
+	}
+	
+	@RDNode:HAS[#id[precisionEngineering]]
+	{
+		@pos = -1520,620,-1
+	}
+	
+	@RDNode:HAS[#id[electronics]]
+	{
+		@anyToUnlock = False
+	}
+	
+	RDNode
+	{
+		id = earlyCommandModules
+		title = Early Command Modules
+		description = First generation command modules for missions to LKO.
+		cost = 45
+		hideEmpty = False
+		nodeName = ct_earlyCommandModules
+		anyToUnlock = False
+		icon = RDicon_commandmodules
+		pos = -1946, 930, -1
+		scale = 0.6
+		
+		Parent
+		{
+			parentID = survivability
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	
+	@RDNode:HAS[#id[simpleCommandModules]]
+	{
+		@title = Basic Command Modules
+		@description = Basic command modules for ventures beyond LKO.
+		@anyToUnlock = False
+		@pos = -1723, 930, -1
+		Parent
+		{
+			parentID = flightControl
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = earlyCommandModules
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+
+	@RDNode:HAS[#id[commandModules]]
+	{
+		@anyToUnlock = False
+	}
+	
+	RDNode
+	{
+		id = heavierCommandModules
+		title = Heavier Command Modules
+		description = 3.75m Command Modules
+		cost = 550
+		hideEmpty = False
+		nodeName = ct_heavierCommandModules
+		anyToUnlock = False
+		icon = RDicon_commandmodules
+		pos = -1118, 930, -1
+		scale = 0.6
+		Parent
+		{
+			parentID = heavyCommandModules
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	
+	@RDNode:HAS[#id[spaceExploration]]
+	{
+		@pos = -1723,750,-1
+	}
+	
+	@RDNode:HAS[#id[advExploration]]
+	{
+		@pos = -1520,750,-1
+	}
+	
+	@RDNode:HAS[#id[fieldScience]]
+	{
+		@anyToUnlock = False
+		@pos = -1309,870,-1
+	}
+	
+	@RDNode:HAS[#id[advancedMotors]]
+	{
+		@pos = -1118,870,-1
+	}
+	
+	@RDNode:HAS[#id[experimentalMotors]]
+	{
+		@pos = -927,870,-1
+	}
+
+	@RDNode:HAS[#id[scienceTech]]
+	{
+		@anyToUnlock = False
+		@pos = -1309,750,-1
+	}
+	
+	@RDNode:HAS[#id[advScienceTech]]
+	{
+		@anyToUnlock = False
+		@pos = -1118,810,-1
+	}
+	
+	@RDNode:HAS[#id[experimentalScience]]
+	{
+		@pos = -927,810,-1
+	}
+	
+	@RDNode:HAS[#id[advOffworldMining]]
+	{
+		@pos = -736,810,-1
+	}
+	
+	@RDNode:HAS[#id[resourceExploitation]]
+	{
+		@pos = -545,810,-1
+	}
+	
+	@RDNode:HAS[#id[specializedScienceTech]]
+	{
+		@pos = -1118,750,-1
+	}
+	
+	@RDNode:HAS[#id[longTermScienceTech]]
+	{
+		@pos = -927,750,-1
+	}
+	
+	@RDNode:HAS[#id[scientificOutposts]]
+	{
+		@pos = -736,750,-1
+	}
+	
+	@RDNode:HAS[#id[highEnergyScience]]
+	{
+		@pos = -545,750,-1
+	}
+	
+	@RDNode:HAS[#id[ionPropulsion]]
+	{
+		@anyToUnlock = False
+		@pos = -1118,690,-1
+		@Parent:HAS[#parentID[unmannedTech]]
+		{
+			@parentID = electronics
+		}
+	}
+	
+	@RDNode:HAS[#id[advIonPropulsion]]
+	{
+		@pos = -927,690,-1
+	}
+	
+	@RDNode:HAS[#id[plasmaPropulsion]]
+	{
+		@pos = -736,690,-1
+	}
+	
+	@RDNode:HAS[#id[advEMSystems]]
+	{
+		@pos = -545,690,-1
+	}
+	
+	@RDNode:HAS[#id[specializedPlasmaGeneration]]
+	{
+		@pos = -354,690,-1
+	}
+	
+	@RDNode:HAS[#id[advGriddedThrusters]]
+	{
+		@pos = -736,620,-1
+	}
+	
+	@RDNode:HAS[#id[expGriddedThrusters]]
+	{
+		@pos = -545,620,-1
+	}
+	
+	@RDNode:HAS[#id[automation]]
+	{
+		!Parent:HAS[#parentID[unmannedTech]]
+		{}
+	}
+	
+	@RDNode:HAS[#id[electrics]]
+	{
+		@pos = -1723,500,-1
+	}
+	
+	@RDNode:HAS[#id[advElectrics]]
+	{
+		@pos = -1520,500,-1
+	}
+	
+	@RDNode:HAS[#id[largeElectrics]]
+	{
+		@pos = -1309,500,-1
+		@anyToUnlock = False
+		Parent
+		{
+			parentID = heatManagementSystems
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	
+	@RDNode:HAS[#id[advSolarTech]]
+	{
+		@pos = -1118,500,-1
+		@anyToUnlock = False
+		Parent
+		{
+			parentID = electronics
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	
+	@RDNode:HAS[#id[advPVMaterials]]
+	{
+		@pos = -927,560,-1
+	}
+	
+	@RDNode:HAS[#id[cuttingEdgeSolarTech]]
+	{
+		@pos = -927,500,-1
+	}
+
+	@RDNode:HAS[#id[specializedElectrics]]
+	{
+		@pos = -1118,440,-1
+	}
+	
+	@RDNode:HAS[#id[experimentalElectrics]]
+	{
+		@pos = -927,440,-1
+		@anyToUnlock = False
+		Parent
+		{
+			parentID = advHeatManagement
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	
+	@RDNode:HAS[#id[highTechElectricalSystems]]
+	{
+		@pos = -736,440,-1
+	}
+	
+	@RDNode:HAS[#id[microwavePowerTransmission]]
+	{
+		@pos = -736, 500, -1
+	}
+	
+
+
+	@RDNode:HAS[#id[hydroponics]]
+	{
+		@title = Early Orbital Stations
+		@description = Advances in recycling and conversion technologies will considerably improve life support systems, which increases the feasibility of permanent orbital stations.
+		!Parent:HAS[#parentID[storageTech]]
+		{}
+	}
+	
+	@RDNode:HAS[#id[shortTermHabitation]]
+	{
+		@anyToUnlock = False
+		@Parent:HAS[#parentID[hydroponics]]
+		{
+			@parentID = orbitalStations
+		}
+		Parent
+		{
+			parentID = logistics
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+
+	@RDNode:HAS[#id[nuclearPropulsion]]
+	{
+		@cost = 300
+		@anyToUnlock = False
+		@pos = -1309,1711,-1
+		@Parent:HAS[#parentID[advFuelSystems]]
+		{
+			@parentID = precisionPropulsion
+		}
+		@Parent:HAS[#parentID[heavierRocketry]]
+		{
+			@lineFrom = TOP
+			@lineTo = BOTTOM
+		}
+	}
+	
+	@RDNode:HAS[#id[improvedNuclearPropulsion]]
+	{
+		@Parent:HAS[#parentID[nuclearPropulsion]]
+		{
+			@lineFrom = RIGHT
+			@lineTo = LEFT
+		}
+	}
+}

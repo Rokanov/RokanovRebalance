@@ -1,0 +1,1435 @@
+//------\\
+//---SETI-CommunityTechTree---\\
+//------\\
+//---Tech Tree changes for SQUAD folder parts---\\
+//------\\
+
+
+//------\\
+//---start---\\
+//------\\
+
+//---Probodobodyne HECS
+@PART[probeCoreHex]:FOR[SETIctt]
+{
+	@TechRequired = start
+}
+
+//---Aerodynamic Nose Cone
+@PART[noseCone]:FOR[SETIctt]
+{
+	@TechRequired = start
+}
+
+//---Small Nose Cone
+@PART[standardNoseCone]:FOR[SETIctt]
+{
+	@TechRequired = start
+}
+
+//---FL-A10 Adapter
+@PART[adapterSmallMiniTall]:FOR[SETIctt]
+{
+	@TechRequired = start
+}
+
+//---Basic Fin, basicFin
+
+//---RT-5 "Flea" Solid Fuel Booster, solidBooster_sm
+
+//---RT-10 "Hammer" Solid Fuel Booster
+@PART[solidBooster]:FOR[SETIctt]
+{
+	@TechRequired = start
+}
+
+//---Communotron 16
+@PART[longAntenna]:FOR[SETIctt]
+{
+	@TechRequired = start
+}
+
+//---Z-100 Rechargeable Battery Pack
+@PART[batteryPack]:FOR[SETIctt]
+{
+	@TechRequired = start
+}
+
+//---2HOT Thermometer
+@PART[sensorThermometer]:FOR[SETIctt]
+{
+	@TechRequired = start
+}
+
+//---PresMat Barometer
+@PART[sensorBarometer]:FOR[SETIctt]
+{
+	@TechRequired = start
+}
+
+
+//------\\
+//---basicRocketry---\\
+//------\\
+
+//---TR-18A Stack Decoupler
+@PART[stackDecoupler]:FOR[SETIctt]
+{
+	@TechRequired = basicRocketry
+}
+
+//---TR-2V Stack Decoupler
+@PART[stackDecouplerMini]:FOR[SETIctt]
+{
+	@TechRequired = basicRocketry
+}
+
+//---TR-2C Stack Separator
+@PART[stackSeparatorMini]:FOR[SETIctt]
+{
+	@TechRequired = basicRocketry
+}
+
+//---Small Inline Reaction Wheel
+@PART[sasModule]:FOR[SETIctt]
+{
+	@TechRequired = basicRocketry
+}
+
+//---Double-C Seismic Accelerometer
+@PART[sensorAccelerometer]:FOR[SETIctt]
+{
+	@TechRequired = basicRocketry
+}
+
+
+//------\\
+//---engineering101---\\
+//------\\
+
+//---Pegasus I Mobility Enhancer
+@PART[ladder1]:FOR[SETIctt]
+{
+	@TechRequired = engineering101
+}
+
+//---EAS-4 Strut Connector
+@PART[strutConnector]:FOR[SETIctt]
+{
+	@TechRequired = engineering101
+}
+
+//---EAS-1 External Command Seat
+@PART[seatExternalCmd]:FOR[SETIctt]
+{
+	@TechRequired = engineering101
+}
+
+//---RoveMax Model S2
+@PART[roverWheel2]:FOR[SETIctt]
+{
+	@TechRequired = engineering101
+}
+
+//---Z-400 Rechargeable Battery
+@PART[ksp_r_largeBatteryPack]:FOR[SETIctt]
+{
+	@TechRequired = engineering101
+}
+
+//---Service Bay (1.25m)
+@PART[ServiceBay_125]:FOR[SETIctt]
+{
+	@TechRequired = engineering101
+}
+
+//---Modular Girder Adapter
+@PART[trussAdapter]:FOR[SETIctt]
+{
+	@TechRequired = engineering101
+}
+
+//---Modular Girder Segment
+@PART[trussPiece1x]:FOR[SETIctt]
+{
+	@TechRequired = engineering101
+}
+
+//---Modular Girder Segment XL
+@PART[trussPiece3x]:FOR[SETIctt]
+{
+	@TechRequired = engineering101
+}
+
+//---Structural Beams
+@PART[structuralIBeam1|structuralIBeam2|structuralIBeam3]:FOR[SETIctt]
+{
+	@TechRequired = engineering101
+}
+
+//---Structural Panels
+@PART[structuralPanel1|structuralPanel2]:FOR[SETIctt]
+{
+	@TechRequired = engineering101
+}
+
+//---Strut Oktos
+@PART[strutCube|strutOcto]:FOR[SETIctt]
+{
+	@TechRequired = engineering101
+}
+
+
+//------\\
+//---earlyAviation---\\
+//------\\
+
+//---Mk16 Parachute
+@PART[parachuteSingle]:FOR[SETIctt]
+{
+	@TechRequired = earlyAviation
+}
+
+//---AV-R8 Winglet
+@PART[R8winglet]:FOR[SETIctt]
+{
+	@TechRequired = earlyAviation
+}
+
+//---Swept Wings
+@PART[sweptWing]:FOR[SETIctt]
+{
+	@TechRequired = earlyAviation
+}
+
+//---Mk1 Inline Cockpit
+@PART[Mark2Cockpit]:FOR[SETIctt]
+{
+	@TechRequired = earlyAviation
+}
+
+//---TR-18D Stack Separator
+@PART[stackSeparator]:FOR[SETIctt]
+{
+	@TechRequired = earlyAviation
+}
+
+//---Tail Connector A
+@PART[airplaneTail]:FOR[SETIctt]
+{
+	@TechRequired = earlyAviation
+}
+
+//---Tail Connector B
+@PART[airplaneTailB]:FOR[SETIctt]
+{
+	@TechRequired = earlyAviation
+}
+
+//---LY-01 Fixed Landing Gear
+@PART[GearFixed]:FOR[SETIctt]
+{
+	@TechRequired = earlyAviation
+}
+
+//---LY05 Steerable Landing Gear
+@PART[GearFree]:FOR[SETIctt]
+{
+	@TechRequired = earlyAviation
+}
+
+//---Mk1 Liquid Fuel Fuselage
+@PART[MK1Fuselage]:FOR[SETIctt]
+{
+	@TechRequired = earlyAviation
+}
+
+//---Structural Fuselage
+@PART[Mk1FuselageStructural]:FOR[SETIctt]
+{
+	@TechRequired = earlyAviation
+}
+
+//---Telus Mobility Enhancer
+@PART[telescopicLadder]:FOR[SETIctt]
+{
+	@TechRequired = earlyAviation
+}
+
+
+//------\\
+//---modularWings---\\
+//------\\
+
+//---WingConnectors
+@PART[wingConnector|wingConnector2|wingConnector3|wingConnector4|wingConnector5]:FOR[SETIctt]
+{
+	@TechRequired = ultraHighEnergyPhysics
+}
+
+//---Elevons except 1
+@PART[StandardCtrlSrf|elevon2|elevon3|smallCtrlSrf|elevon5]:FOR[SETIctt]
+{
+	@TechRequired = ultraHighEnergyPhysics
+}
+
+//---Wing Strake
+@PART[wingStrake]:FOR[SETIctt]
+{
+	@TechRequired = ultraHighEnergyPhysics
+}
+
+//---Structural Wings
+@PART[structuralWing|structuralWing2|structuralWing3|structuralWing4]:FOR[SETIctt]
+{
+	@TechRequired = ultraHighEnergyPhysics
+}
+
+//---Swept Wings
+@PART[sweptWing1|sweptWing2]:FOR[SETIctt]
+{
+	@TechRequired = ultraHighEnergyPhysics
+}
+
+//---Delta Wings
+@PART[deltaWing|delta_small]:FOR[SETIctt]
+{
+	@TechRequired = ultraHighEnergyPhysics
+}
+
+//---shuttleWings Big-S
+@PART[wingShuttleDelta|elevonMk3|wingShuttleElevon1|wingShuttleElevon2|wingShuttleStrake]:FOR[SETIctt]
+{
+	@TechRequired = ultraHighEnergyPhysics
+}
+
+
+//------\\
+//---generalRocketry---\\
+//------\\
+
+//---LV-T45 "Swivel" Liquid Fuel Engine
+@PART[liquidEngine2]:FOR[SETIctt]
+{
+	@TechRequired = generalRocketry
+}
+
+//---BACC "Thumper" Solid Fuel Booster, solidBooster1-1
+
+//---FL-Tx00 Fuel Tanks
+@PART[fuelTankSmallFlat|fuelTankSmall|fuelTank|fuelTank_long]:FOR[SETIctt]
+{
+	@TechRequired = generalRocketry
+}
+
+//---TT-38K Radial Decoupler
+@PART[radialDecoupler]:FOR[SETIctt]
+{
+	@TechRequired = generalRocketry
+}
+
+//---TT18-A Launch Stability Enhancer
+@PART[launchClamp1]:FOR[SETIctt]
+{
+	@TechRequired = generalRocketry
+}
+
+
+//------\\
+//---stability---\\
+//------\\
+
+//---AV-T1 Winglet, winglet
+
+//---AE-FF1 Airstream Protective Shell (1.25m)
+@PART[fairingSize1]:FOR[SETIctt]
+{
+	@TechRequired = stability
+}
+
+//---LY-10 Small Landing Gear
+@PART[SmallGearBay]:FOR[SETIctt]
+{
+	@TechRequired = stability
+}
+
+//---Circular Intake
+@PART[CircularIntake]:FOR[SETIctt]
+{
+	@TechRequired = stability
+}
+
+//---Mk1 Fuselage - Intake
+@PART[MK1IntakeFuselage]:FOR[SETIctt]
+{
+	@TechRequired = stability
+}
+
+//---A.I.R.B.R.A.K.E.S
+@PART[airbrake1]:FOR[SETIctt]
+{
+	@TechRequired = stability
+}
+
+//---Small Hardpoint
+@PART[smallHardpoint]:FOR[SETIctt]
+{
+	@TechRequired = stability
+}
+
+
+//------\\
+//---survivability---\\
+//------\\
+
+//---LT-05 Micro Landing Strut, miniLandingLeg
+
+//---Mystery Goo™ Containment Unit
+@PART[GooExperiment]:FOR[SETIctt]
+{
+	@TechRequired = survivability
+}
+
+//---Illuminator Mk2
+@PART[spotLight2]:FOR[SETIctt]
+{
+	@TechRequired = survivability
+}
+
+//---Fuel Cell
+@PART[FuelCell]:FOR[SETIctt]
+{
+	@TechRequired = survivability
+}
+
+//---Telus-LV Bay Mobility Enhancer
+@PART[telescopicLadderBay]:FOR[SETIctt]
+{
+	@TechRequired = survivability
+}
+
+//---Z-200 Rechargeable Battery Bank
+@PART[batteryBankMini]:FOR[SETIctt]
+{
+	@TechRequired = survivability
+}
+
+//---Z-1k Rechargeable Battery Bank
+@PART[batteryBank]:FOR[SETIctt]
+{
+	@TechRequired = survivability
+}
+
+
+//------\\
+//---advRocketry---\\
+//------\\
+
+//---LV-909 "Terrier" Liquid Fuel Engine, liquidEngine3
+
+//---LV-T30 "Reliant" Liquid Fuel Engine
+@PART[liquidEngine]:FOR[SETIctt]
+{
+	@TechRequired = advRocketry
+}
+
+//---TT-70 Radial Decoupler
+@PART[radialDecoupler2]:FOR[SETIctt]
+{
+	@TechRequired = advRocketry
+}
+
+//---Sepratron I
+@PART[sepMotor1]:FOR[SETIctt]
+{
+	@TechRequired = advRocketry
+}
+
+
+//------\\
+//---basicFuelSystems---\\
+//------\\
+
+//---FL-R10 RCS Fuel Tank
+@PART[rcsTankMini]:FOR[SETIctt]
+{
+	@TechRequired = basicFuelSystems
+}
+
+//---Stratus-V Roundified Monopropellant Tank
+@PART[radialRCSTank]:FOR[SETIctt]
+{
+	@TechRequired = basicFuelSystems
+}
+
+
+//------\\
+//---generalConstruction---\\
+//------\\
+
+//---Rockomax Brand Adapter, largeAdapter
+
+//---Rockomax Brand Adapter 02
+@PART[largeAdapter2]:FOR[SETIctt]
+{
+	@TechRequired = generalConstruction
+}
+
+//---Protective Rocket Nose Cone Mk7
+@PART[rocketNoseCone]:FOR[SETIctt]
+{
+	@TechRequired = generalConstruction
+}
+
+//---FL-A5 Adapter
+@PART[adapterSmallMiniShort]:FOR[SETIctt]
+{
+	@TechRequired = generalConstruction
+}
+
+//---Stack Couplers
+@PART[stackBiCoupler|stackTriCoupler|stackQuadCoupler]:FOR[SETIctt]
+{
+	@TechRequired = generalConstruction
+}
+
+//---Adapter Large Small
+@PART[adapterLargeSmallBi|adapterLargeSmallTri|adapterLargeSmallQuad]:FOR[SETIctt]
+{
+	@TechRequired = generalConstruction
+}
+
+
+//------\\
+//---aviation---\\
+//------\\
+
+//---Standard Canard
+@PART[CanardController]:FOR[SETIctt]
+{
+	@TechRequired = aviation
+}
+
+//---Structural Pylon
+@PART[structuralPylon]:FOR[SETIctt]
+{
+	@TechRequired = aviation
+}
+
+//---Delta-Deluxe Winglet
+@PART[winglet3]:FOR[SETIctt]
+{
+	@TechRequired = aviation
+}
+
+//---Tail Fin
+@PART[tailfin]:FOR[SETIctt]
+{
+	@TechRequired = aviation
+}
+
+
+//------\\
+//---flightControl---\\
+//------\\
+
+//---Probodobodyne OKTO2
+@PART[probeCoreOcto2]:FOR[SETIctt]
+{
+	@TechRequired = flightControl
+}
+
+//---Advanced Inline Stabilizer
+@PART[advSasModule]:FOR[SETIctt]
+{
+	@TechRequired = flightControl
+}
+
+//---Place-Anywhere 7 Linear RCS Port
+@PART[linearRcs]:FOR[SETIctt]
+{
+	@TechRequired = flightControl
+}
+
+
+//------\\
+//---earlyCommandModules---\\
+//------\\
+
+//---Mk1 Command Pod
+@PART[mk1pod]:FOR[SETIctt]
+{
+	@TechRequired = earlyCommandModules
+}
+
+//---Heat Shield (1.25m)
+@PART[HeatShield1]:FOR[SETIctt]
+{
+	@TechRequired = earlyCommandModules
+}
+
+
+//------\\
+//---enhancedSurvivability---\\
+//------\\
+
+//---Launch Escape System
+@PART[LaunchEscapeSystem]:FOR[SETIctt]
+{
+	@TechRequired = enhancedSurvivability
+}
+
+//---Mk16-XL Parachute
+@PART[parachuteLarge]:FOR[SETIctt]
+{
+	@TechRequired = enhancedSurvivability
+}
+
+//---Mk2-R Radial-Mount Parachute
+@PART[parachuteRadial]:FOR[SETIctt]
+{
+	@TechRequired = enhancedSurvivability
+}
+
+//---Mk12-R Radial-Mount Drogue Chute
+@PART[radialDrogue]:FOR[SETIctt]
+{
+	@TechRequired = enhancedSurvivability
+}
+
+//---Mk25 Parachute
+@PART[parachuteDrogue]:FOR[SETIctt]
+{
+	@TechRequired = enhancedSurvivability
+}
+
+//---Fuel Cell Array
+@PART[FuelCellArray]:FOR[SETIctt]
+{
+	@TechRequired = enhancedSurvivability
+}
+
+
+//------\\
+//---basicScience---\\
+//------\\
+
+//---Comms DTS-M1, mediumDishAntenna
+
+//---SC-9001 Science Jr.
+@PART[science_module]:FOR[SETIctt]
+{
+	@TechRequired = basicScience
+}
+
+//---OX-STAT Photovoltaic Panels
+@PART[solarPanels5]:FOR[SETIctt]
+{
+	@TechRequired = basicScience
+}
+
+//---Illuminator Mk1
+@PART[spotLight1]:FOR[SETIctt]
+{
+	@TechRequired = basicScience
+}
+
+//---OX-4W 3x2 Photovoltaic Panels
+@PART[solarPanels3]:FOR[SETIctt]
+{
+	@TechRequired = basicScience
+}
+
+
+//------\\
+//---heavyRocketry---\\
+//------\\
+
+//---S1 SRB-KD25k "Kickback" Solid Fuel Booster, MassiveBooster
+
+//---Mk-55 "Thud" Liquid Fuel Engine
+@PART[radialLiquidEngine1-2]:FOR[SETIctt]
+{
+	@TechRequired = heavyRocketry
+}
+
+//---Rockomax Brand Decoupler
+@PART[decoupler1-2]:FOR[SETIctt]
+{
+	@TechRequired = heavyRocketry
+}
+
+//---TR-XL Stack Separator
+@PART[stackSeparatorBig]:FOR[SETIctt]
+{
+	@TechRequired = heavyRocketry
+}
+
+//---Hydraulic Detachment Manifold
+@PART[radialDecoupler1-2]:FOR[SETIctt]
+{
+	@TechRequired = heavyRocketry
+}
+
+
+//------\\
+//---propulsionSystems---\\
+//------\\
+
+//---48-7S "Spark" Liquid Fuel Engine, liquidEngineMini
+
+//---Oscar-B Fuel Tank, miniFuelTank
+
+//---O-10 "Puff" MonoPropellant Fuel Engine
+@PART[omsEngine]:FOR[SETIctt]
+{
+	@TechRequired = propulsionSystems
+}
+
+//---24-77 "Twitch" Liquid Fuel Engine
+@PART[smallRadialEngine]:FOR[SETIctt]
+{
+	@TechRequired = propulsionSystems
+}
+
+//------\\
+//---fuelSystems---\\
+//------\\
+
+//---Rockomax X200-8 Fuel Tank, fuelTank4-2
+
+//---Rockomax X200-16 Fuel Tank, fuelTank2-2
+
+//---Rockomax X200-32 Fuel Tank, fuelTank1-2
+
+//---ROUND-8 Toroidal Fuel Tank
+@PART[toroidalFuelTank]:FOR[SETIctt]
+{
+	@TechRequired = fuelSystems
+}
+
+//---FL-R25 RCS Fuel Tank
+@PART[RCSFuelTank]:FOR[SETIctt]
+{
+	@TechRequired = fuelSystems
+}
+
+//---Stratus-V Cylindrified Monopropellant Tank
+@PART[rcsTankRadialLong]:FOR[SETIctt]
+{
+	@TechRequired = fuelSystems
+}
+
+//---Rockomax Jumbo-64 Fuel Tank
+@PART[fuelTank3-2]:FOR[SETIctt]
+{
+	@TechRequired = fuelSystems
+}
+
+//---C7 Brand Adapter - 2.5m to 1.25m
+@PART[adapterSize2-Size1]:FOR[SETIctt]
+{
+	@TechRequired = fuelSystems
+}
+
+//---C7 Brand Adapter Slanted - 2.5m to 1.25m
+@PART[adapterSize2-Size1Slant]:FOR[SETIctt]
+{
+	@TechRequired = fuelSystems
+}
+
+
+//------\\
+//---advConstruction---\\
+//------\\
+
+//---AE-FF2 Airstream Protective Shell (2.5m)
+@PART[fairingSize2]:FOR[SETIctt]
+{
+	@TechRequired = advConstruction
+}
+
+//---Clamp-O-Tron Docking Port
+@PART[dockingPort2]:FOR[SETIctt]
+{
+	@TechRequired = advConstruction
+}
+
+//---BZ-52 Radial Attachment Point
+@PART[stackPoint1]:FOR[SETIctt]
+{
+	@TechRequired = advConstruction
+}
+
+//---The Not-Rockomax Micronode
+@PART[structuralMiniNode]:FOR[SETIctt]
+{
+	@TechRequired = advConstruction
+}
+
+
+//------\\
+//---aerodynamicSystems---\\
+//------\\
+
+//---Mk1 Cockpit
+@PART[Mark1Cockpit]:FOR[SETIctt]
+{
+	@TechRequired = aerodynamicSystems
+}
+
+//---XM-G50 Radial Air Intake
+@PART[airScoop]:FOR[SETIctt]
+{
+	@TechRequired = aerodynamicSystems
+}
+
+//---J-33 "Wheesley" Basic Jet Engine
+@PART[JetEngine]:FOR[SETIctt]
+{
+	@TechRequired = aerodynamicSystems
+}
+
+//---Advanced Nose Cone - Type B
+@PART[pointyNoseConeB]:FOR[SETIctt]
+{
+	@TechRequired = aerodynamicSystems
+}
+
+//---NCS Adapter
+@PART[noseConeAdapter]:FOR[SETIctt]
+{
+	@TechRequired = aerodynamicSystems
+}
+
+
+//------\\
+//---landing---\\
+//------\\
+
+//---LT-1 Landing Struts, landingLeg1
+
+//---LY-50 Medium Landing Gear
+@PART[GearMedium]:FOR[SETIctt]
+{
+	@TechRequired = landing
+}
+
+
+//------\\
+//---advFlightControl---\\
+//------\\
+
+//---RV-105 RCS Thruster Block, RCSBlock
+
+//---Stayputnik Mk. 1
+@PART[probeCoreSphere]:FOR[SETIctt]
+{
+	@TechRequired = flightControl
+}
+
+//---Probodobodyne OKTO
+@PART[probeCoreOcto]:FOR[SETIctt]
+{
+	@TechRequired = advFlightControl
+}
+
+//---Probodobodyne QBE
+@PART[probeCoreCube]:FOR[SETIctt]
+{
+	@TechRequired = advFlightControl
+}
+
+
+//------\\
+//---simpleCommandModules - Basic Command Modules---\\
+//------\\
+
+//---Mk1 Lander Can
+@PART[landerCabinSmall]:FOR[SETIctt]
+{
+	@TechRequired = simpleCommandModules
+}
+
+//---Heat Shield (2.5m)
+@PART[HeatShield2]:FOR[SETIctt]
+{
+	@TechRequired = simpleCommandModules
+}
+
+
+//------\\
+//---advSurvivability---\\
+//------\\
+
+
+//------\\
+//---spaceExploration---\\
+//------\\
+
+//---Probodobodyne RoveMate
+@PART[roverBody]:FOR[SETIctt]
+{
+	@TechRequired = spaceExploration
+}
+
+//---RoveMax Model M1
+@PART[roverWheel1]:FOR[SETIctt]
+{
+	@TechRequired = spaceExploration
+}
+
+
+//------\\
+//---miniaturization---\\
+//------\\
+
+//---Clamp-O-Tron Docking Port Jr., dockingPort3
+
+
+//------\\
+//---electrics---\\
+//------\\
+
+//---OX-4L 1x6 Photovoltaic Panels
+@PART[solarPanels4]:FOR[SETIctt]
+{
+	@TechRequired = electrics
+}
+
+//---Z-4K Rechargeable Battery Bank
+@PART[batteryBankLarge]:FOR[SETIctt]
+{
+	@TechRequired = electrics
+}
+
+
+//------\\
+//---recycling---\\
+//------\\
+
+//---Mobile Processing Lab MPL-LG-2
+@PART[Large_Crewed_Lab]:FOR[SETIctt]
+{
+	@TechRequired = recycling
+}
+
+
+//------\\
+//---storageTech---\\
+//------\\
+
+//---Service Bay (2.5m)
+@PART[ServiceBay_250]:FOR[SETIctt]
+{
+	@TechRequired = storageTech
+}
+
+
+//------\\
+//---improvedRocketry---\\
+//------\\
+
+//---RE-L10 "Poodle" Liquid Fuel Engine
+@PART[liquidEngine2-2]:FOR[SETIctt]
+{
+	@TechRequired = improvedRocketry
+}
+
+//---RE-I5 "Skipper" Liquid Fuel Engine
+@PART[engineLargeSkipper]:FOR[SETIctt]
+{
+	@TechRequired = improvedRocketry
+}
+
+
+//------\\
+//---heavierRocketry---\\
+//------\\
+
+//---LFB KR-1x2 "Twin-Boar" Liquid Fuel Engine, Size2LFB
+
+//---RE-M3 "Mainsail" Liquid Engine, liquidEngine1-2
+
+
+//------\\
+//---precisionPropulsion---\\
+//------\\
+
+//---LV-1R "Spider" Liquid Fuel Engine, radialEngineMini
+
+//---LV-1 "Ant" Liquid Fuel Engine
+@PART[microEngine]:FOR[SETIctt]
+{
+	@TechRequired = precisionPropulsion
+}
+
+
+//------\\
+//---specializedPropulsion---\\
+//------\\
+
+//---T-1 Toroidal "Aerospike" Liquid Fuel Engine
+@PART[toroidalAerospike]:FOR[SETIctt]
+{
+	@TechRequired = specializedPropulsion
+}
+
+
+//------\\
+//---advFuelSystems---\\
+//------\\
+
+//---FL-R1 RCS Fuel Tank, RCSTank1-2
+
+
+//------\\
+//---specializedConstruction---\\
+//------\\
+
+//---Clamp-O-Tron Shielded Docking Port
+@PART[dockingPort1]:FOR[SETIctt]
+{
+	@TechRequired = specializedConstruction
+}
+
+//---Inline Clamp-O-Tron
+@PART[dockingPortLateral]:FOR[SETIctt]
+{
+	@TechRequired = specializedConstruction
+}
+
+//---Rockomax HubMax Multi-Point Connector
+@PART[stationHub]:FOR[SETIctt]
+{
+	@TechRequired = specializedConstruction
+}
+
+
+//------\\
+//---actuators---\\
+//------\\
+
+//---Advanced Grabbing Unit, GrapplingDevice
+
+
+//------\\
+//---subsonicFlight---\\
+//------\\
+
+//---Airliner Wings FAT
+@PART[airlinerCtrlSrf|airlinerMainWing|airlinerTailFin]:FOR[SETIctt]
+{
+	@TechRequired = subsonicFlight
+}
+
+//---shuttleWings Big-S Rudder
+@PART[wingShuttleRudder]:FOR[SETIctt]
+{
+	@TechRequired = subsonicFlight
+}
+
+
+//------\\
+//---supersonicFlight---\\
+//------\\
+
+//---Advanced Canard
+@PART[AdvancedCanard]:FOR[SETIctt]
+{
+	@TechRequired = supersonicFlight
+}
+
+//---J-X4 "Whiplash" Turbo Ramjet Engine
+@PART[turboFanEngine]:FOR[SETIctt]
+{
+	@TechRequired = supersonicFlight
+}
+
+
+//------\\
+//---advAerodynamics---\\
+//------\\
+
+//---Mk2 Cockpits
+@PART[mk2Cockpit_Standard|mk2Cockpit_Inline]:FOR[SETIctt]
+{
+	@TechRequired = advAerodynamics
+}
+
+//---Mk2 Adapters
+@PART[mk2_1m_Bicoupler|mk2_1m_AdapterLong|mk2SpacePlaneAdapter|adapterSize2-Mk2]:FOR[SETIctt]
+{
+	@TechRequired = advAerodynamics
+}
+
+//---Mk2 Fuselage
+@PART[mk2Fuselage|mk2FuselageLongLFO|mk2FuselageShortLiquid|mk2FuselageShortLFO|mk2FuselageShortMono]:FOR[SETIctt]
+{
+	@TechRequired = advAerodynamics
+}
+
+//---Mk2 Cargo
+@PART[mk2CargoBayL|mk2CargoBayS|mk2CrewCabin]:FOR[SETIctt]
+{
+	@TechRequired = advAerodynamics
+}
+
+//---Mk2 Docking
+@PART[mk2DockingPort]:FOR[SETIctt]
+{
+	@TechRequired = advAerodynamics
+}
+
+
+//------\\
+//---advLanding---\\
+//------\\
+
+//---LT-2 Landing Strut, landingLeg1-2
+
+
+//------\\
+//---specializedControl---\\
+//------\\
+
+//---Advanced Reaction Wheel Module, Large, asasmodule1-2
+
+//---Vernor Engine, vernierEngine
+
+
+//------\\
+//---commandModules---\\
+//------\\
+
+//---Mk1-2 Command Pod, Mark1-2Pod
+
+//---Mk2 Lander Can, mk2LanderCabin
+
+
+//------\\
+//---advExploration---\\
+//------\\
+
+//---TR-2L Ruggedized Vehicular Wheel
+@PART[wheelMed]:FOR[SETIctt]
+{
+	@TechRequired = advExploration
+}
+
+
+//------\\
+//---precisionEngineering---\\
+//------\\
+
+//---GRAVMAX Negative Gravioli Detector
+@PART[sensorGravimeter]:FOR[SETIctt]
+{
+	@TechRequired = precisionEngineering
+}
+
+
+//------\\
+//---advElectrics---\\
+//------\\
+
+//---SP-L 1x6 Photovoltaic Panels, solarPanels2
+
+//---SP-W 3x2 Photovoltaic Panels, solarPanels1
+
+
+//------\\
+//---heatManagementSystems---\\
+//------\\
+
+//---Thermal Control System
+@PART[foldingRadMed|foldingRadLarge]:FOR[SETIctt]
+{
+	@TechRequired = heatManagementSystems
+}
+
+
+//------\\
+//---hydroponics - Early Orbital Stations---\\
+//------\\
+
+//---PPD-10 Hitchhiker Storage Container
+@PART[crewCabin]:FOR[SETIctt]
+{
+	@TechRequired = hydroponics
+}
+
+
+//------\\
+//---nuclearPropulsion---\\
+//------\\
+
+
+
+//------\\
+//---largeVolumeContainment---\\
+//------\\
+
+//---Kerbodyne S3-7200 Tank, Size3MediumTank
+
+//---Kerbodyne S3-3600 Tank, Size3SmallTank
+
+//---TR-38-D, size3Decoupler
+
+//---Kerbodyne ADTP-2-3, Size3to2Adapter
+
+//---Kerbodyne S3-14400 Tank
+@PART[Size3LargeTank]:FOR[SETIctt]
+{
+	@TechRequired = largeVolumeContainment
+}
+
+
+//------\\
+//---advMetalworks---\\
+//------\\
+
+//---AE-FF3 Airstream Protective Shell (3.75m)
+@PART[fairingSize3]:FOR[SETIctt]
+{
+	@TechRequired = advMetalworks
+}
+
+
+//------\\
+//---composites---\\
+//------\\
+
+//---Clamp-O-Tron Docking Port Sr.
+@PART[dockingPortLarge]:FOR[SETIctt]
+{
+	@TechRequired = composites
+}
+
+
+//------\\
+//---advActuators---\\
+//------\\
+
+
+
+//------\\
+//---specializedFlightSystems---\\
+//------\\
+
+
+
+//------\\
+//---highAltitudeFlight---\\
+//------\\
+
+//---Mk2 Bicoupler
+@PART[mk2_1m_Bicoupler]:FOR[SETIctt]
+{
+	@TechRequired = highAltitudeFlight
+}
+
+
+//------\\
+//---heavyAerodynamics---\\
+//------\\
+
+//---Mk3 Cargo Bay CRG-100
+@PART[mk3CargoBayL]:FOR[SETIctt]
+{
+	@TechRequired = heavyAerodynamics
+}
+
+
+//------\\
+//---heavyLanding---\\
+//------\\
+
+//---LY-99 Large Landing Gear, GearLarge
+
+
+//------\\
+//---unmannedTech---\\
+//------\\
+
+
+
+//------\\
+//---heavyCommandModules---\\
+//------\\
+
+//---Heat Shield (3.75m)
+@PART[HeatShield3]:FOR[SETIctt]
+{
+	@TechRequired = heavyCommandModules
+}
+
+//---PPD-12 Cupola Module
+@PART[cupola]:FOR[SETIctt]
+{
+	@TechRequired = heavyCommandModules
+}
+
+
+//------\\
+//---fieldScience---\\
+//------\\
+
+//---Surface Scanning Module
+@PART[SurfaceScanner]:FOR[SETIctt]
+{
+	@TechRequired = fieldScience
+}
+
+//---RoveMax Model XL3
+@PART[roverWheel3]:FOR[SETIctt]
+{
+	@TechRequired = fieldScience
+}
+
+
+//------\\
+//---scienceTech---\\
+//------\\
+
+//---M4435 Narrow-Band Scanner, OrbitalScanner
+
+
+//------\\
+//---electronics---\\
+//------\\
+
+//---Communotron 88-88, commDish
+
+
+//------\\
+//---largeElectrics---\\
+//------\\
+
+//---Gigantor XL Solar Array, largeSolarPanel
+
+
+//------\\
+//---orbitalStations---\\
+//------\\
+
+
+
+//------\\
+//---improvedNuclearPropulsion---\\
+//------\\
+
+//---LV-N "Nerv" Atomic Rocket Motor
+@PART[nuclearEngine]:FOR[SETIctt]
+{
+	@TechRequired = improvedNuclearPropulsion
+}
+
+
+//------\\
+//---veryHeavyRocketry---\\
+//------\\
+
+//---Kerbodyne KR-2L+ "Rhino" Liquid Fuel Engine, Size3AdvancedEngine
+
+//---S3 KS-25x4 "Mammoth" Liquid Fuel Engine, Size3EngineCluster
+
+
+//------\\
+//---highPerformanceFuelSystems---\\
+//------\\
+
+//---FTX-2 External Fuel Duct
+@PART[fuelLine]:FOR[SETIctt]
+{
+	@TechRequired = FuelSystems
+}
+
+
+//------\\
+//---hypersonicFlight---\\
+//------\\
+
+//---CR-7 R.A.P.I.E.R. Engine
+@PART[RAPIER]:FOR[SETIctt]
+{
+	@TechRequired = hypersonicFlight
+}
+
+
+
+//------\\
+//---experimentalAerodynamics---\\
+//------\\
+
+//---Mk3 Cockpit
+@PART[mk3Cockpit_Shuttle]:FOR[SETIctt]
+{
+	@TechRequired = experimentalAerodynamics
+}
+
+//---Mk3 Adapters
+@PART[adapterMk3-Mk2|adapterMk3-Size2|adapterMk3-Size2Slant]:FOR[SETIctt]
+{
+	@TechRequired = experimentalAerodynamics
+}
+
+//---Mk3 Fuselage
+@PART[mk3FuselageLF_25|mk3FuselageLF_50|mk3FuselageLFO_25|mk3FuselageLFO_50]:FOR[SETIctt]
+{
+	@TechRequired = experimentalAerodynamics
+}
+
+
+//------\\
+//---advUnmanned---\\
+//------\\
+
+//---RC-001S Remote Guidance Unit, probeStackSmall
+
+//---CH-J3 Fly-By-Wire Avionics Hub
+@PART[avionicsNoseCone]:FOR[SETIctt]
+{
+	@TechRequired = advUnmanned
+}
+
+//---MK2 Drone Core
+@PART[mk2DroneCore]:FOR[SETIctt]
+{
+	@TechRequired = advUnmanned
+}
+
+//---RC-L01 Remote Guidance Unit
+@PART[probeStackLarge]:FOR[SETIctt]
+{
+	@TechRequired = advUnmanned
+}
+
+
+
+
+
+//------\\
+//---specializedScienceTech---\\
+//------\\
+
+//---Atmospheric Fluid Spectro-Variometer
+@PART[sensorAtmosphere]:FOR[SETIctt]
+{
+	@TechRequired = specializedScienceTech
+}
+
+
+
+
+
+
+//------\\
+//---specializedElectrics---\\
+//------\\
+
+//---PB-NUK Radioisotope Thermoelectric Generator
+@PART[rtg]:FOR[SETIctt]
+{
+	@TechRequired = specializedElectrics
+}

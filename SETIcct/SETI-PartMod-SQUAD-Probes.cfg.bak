@@ -1,0 +1,282 @@
+//------\\
+//---SETI-CommunityTechTree---\\
+//------\\
+//---Part Modding for SQUAD Probes---\\
+//------\\
+
+
+//---Probodobodyne HECS
+@PART[probeCoreHex]:FOR[SETIctt]
+{
+	@entryCost = 100
+	@cost = 900
+	@description = A lack of political support and Kerbals with the right combination of stupidity and courage led to a search for alternative command methods. Our engineers are working on an android to fully replace Kerbals, however their "when it is done" mentality regarding a release date is not good enough for Gene. Thankfully one of our interns found an old computer on a flee market from which our electricians and mechanics created this elegant Probe Core.
+	@mass = 0.085
+	
+	%MODULE[ModuleCommand]
+	{
+		%minimumCrew = 0
+		%RESOURCE[ElectricCharge]
+		{
+			%rate = 0.04
+		}
+	}
+	%MODULE[ModuleReactionWheel]
+	{
+		%PitchTorque = 0.3
+		%YawTorque = 0.3
+		%RollTorque = 0.3
+	
+		%RESOURCE[ElectricCharge]
+		{
+			%rate = 0.03
+		}
+	}
+	!MODULE[ModuleSAS] {}
+	MODULE
+	{
+		name = ModuleSAS
+	}
+}
+
+
+//---Probodobodyne OKTO2
+@PART[probeCoreOcto2]:FOR[SETIctt]
+{
+	@entryCost = 4000
+	@cost = 1100
+	@description = With drastically increasing public (and thus political) interest in our work, Universities around Kerbin took on the challenge to create a new Probe Core. It is lighter, consumes much less energy and most importantly, it dynamically controls the stability of our vessels. A few days work for undergraduates, a giant improvement for KSC operations!
+	@mass = 0.07
+	
+	%MODULE[ModuleCommand]
+	{
+		%minimumCrew = 0
+		%RESOURCE[ElectricCharge]
+		{
+			%rate = 0.04
+		}
+	}
+	!MODULE[ModuleReactionWheel] {}
+	!MODULE[ModuleSAS] {}
+	MODULE
+	{
+	name = ModuleSAS
+	SASServiceLevel = 2
+	}
+
+}
+
+
+//---Probodobodyne QBE
+@PART[probeCoreCube]:FOR[SETIctt]
+{
+	@entryCost = 4000
+	@cost = 1200
+	@description = When Steve Kerman visited our facilities for a public relations photo shoot, he was appalled at the design of our new OKTO2 Probe Core. He took everything and put it into a cubic case, winning several design awards and selling it at 3 times the price. In a small patent war, our lawyers secured us a discount.
+	@mass = 0.085
+	
+	%MODULE[ModuleCommand]
+	{
+		%minimumCrew = 0
+		%RESOURCE[ElectricCharge]
+		{
+			%rate = 0.04
+		}
+	}
+	%MODULE[ModuleReactionWheel]
+	{
+		%PitchTorque = 0.3
+		%YawTorque = 0.3
+		%RollTorque = 0.3
+	
+		%RESOURCE[ElectricCharge]
+		{
+			%rate = 0.03
+		}
+	}
+	!MODULE[ModuleSAS] {}
+	MODULE
+	{
+	name = ModuleSAS
+	SASServiceLevel = 2
+	}
+
+}
+
+//---Probodobodyne OKTO
+@PART[probeCoreOcto]:FOR[SETIctt]
+{
+	@entryCost = 4000
+	@cost = 1200
+	@description = While the OCTO2 was an interim solution, the original project of a unified Command & Control Unit is finally finished. It combines an upgraded Probe Core with a small reaction wheel and sufficient batteries.
+	@mass = 0.085
+	
+	%MODULE[ModuleCommand]
+	{
+		%minimumCrew = 0
+		%RESOURCE[ElectricCharge]
+		{
+			%rate = 0.04
+		}
+	}
+	%MODULE[ModuleReactionWheel]
+	{
+		%PitchTorque = 0.3
+		%YawTorque = 0.3
+		%RollTorque = 0.3
+	
+		%RESOURCE[ElectricCharge]
+		{
+			%rate = 0.03
+		}
+	}
+	!MODULE[ModuleSAS] {}
+	MODULE
+	{
+	name = ModuleSAS
+	SASServiceLevel = 2
+	}
+
+}
+
+//---Stayputnik Mk. 1
+@PART[probeCoreSphere]:FOR[SETIctt]
+{
+	@entryCost = 4000
+	@cost = 1100
+	@description = As it happens, Steve Kermin was visiting our facilities when the OKTO was unveiled. But this time, we were prepared. Our interns managed to secure the napkin he was drawing on and we patented this design before he could do it himself. Without a top node, the structure is now lighter, saving a little weight.
+	@mass = 0.075
+	
+	%MODULE[ModuleCommand]
+	{
+		%minimumCrew = 0
+		%RESOURCE[ElectricCharge]
+		{
+			%rate = 0.04
+		}
+	}
+	%MODULE[ModuleReactionWheel]
+	{
+		%PitchTorque = 0.3
+		%YawTorque = 0.3
+		%RollTorque = 0.3
+	
+		%RESOURCE[ElectricCharge]
+		{
+			%rate = 0.03
+		}
+	}
+	!MODULE[ModuleSAS] {}
+	MODULE
+	{
+	name = ModuleSAS
+	SASServiceLevel = 2
+	}
+
+}
+
+
+
+//---RC-001S Remote Guidance Unit
+@PART[probeStackSmall]:FOR[SETIctt]
+{
+	@entryCost = 16000
+	@cost = 1800
+	@mass = 0.1
+	
+	%MODULE[ModuleCommand]
+	{
+		%minimumCrew = 0
+		%RESOURCE[ElectricCharge]
+		{
+			%rate = 0.04
+		}
+	}
+	%MODULE[ModuleReactionWheel]
+	{
+		%PitchTorque = 0.6
+		%YawTorque = 0.6
+		%RollTorque = 0.6
+	
+		%RESOURCE[ElectricCharge]
+		{
+			%rate = 0.06
+		}
+	}
+	!MODULE[ModuleSAS] {}
+	MODULE
+	{
+	name = ModuleSAS
+	SASServiceLevel = 3
+	}
+
+}
+
+//---RC-L01 Remote Guidance Unit
+@PART[probeStackLarge]:FOR[SETIctt]
+{
+	@entryCost = 16000
+	@cost = 2040
+	@mass = 0.16
+	
+	%MODULE[ModuleCommand]
+	{
+		%minimumCrew = 0
+		%RESOURCE[ElectricCharge]
+		{
+			%rate = 0.04
+		}
+	}
+	%MODULE[ModuleReactionWheel]
+	{
+		%PitchTorque = 1.8
+		%YawTorque = 1.8
+		%RollTorque = 1.8
+	
+		%RESOURCE[ElectricCharge]
+		{
+			%rate = 0.18
+		}
+	}
+	!MODULE[ModuleSAS] {}
+	MODULE
+	{
+	name = ModuleSAS
+	SASServiceLevel = 3
+	}
+
+}
+
+//---MK2 Drone Core
+@PART[mk2DroneCore]:FOR[SETIctt]
+{
+	@entryCost = 16000
+	@cost = 2040
+	@mass = 0.16
+	
+	%MODULE[ModuleCommand]
+	{
+		%minimumCrew = 0
+		%RESOURCE[ElectricCharge]
+		{
+			%rate = 0.04
+		}
+	}
+	%MODULE[ModuleReactionWheel]
+	{
+		%PitchTorque = 1.8
+		%YawTorque = 1.8
+		%RollTorque = 1.8
+	
+		%RESOURCE[ElectricCharge]
+		{
+			%rate = 0.18
+		}
+	}
+	!MODULE[ModuleSAS] {}
+	MODULE
+	{
+	name = ModuleSAS
+	SASServiceLevel = 3
+	}
+}
